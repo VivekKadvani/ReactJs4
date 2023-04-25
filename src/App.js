@@ -5,8 +5,8 @@ import Header from './Components/Header';
 import ErrorPage from './Components/ErrorPage';
 import UserDetail from './Components/UserDetail';
 import {BrowserRouter as Router,Routes,Route} from 'react-router-dom';
-function App(props) {
-  console.log(props)
+function App() {
+
   return (
     <Router>
       <div className="App">
@@ -18,6 +18,7 @@ function App(props) {
           </Route>
 
           <Route path="/home/:userId" element={<UserDetail />} />
+          
           
            <Route path="/about" element={<About/>} />
 
